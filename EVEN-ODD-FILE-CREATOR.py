@@ -1,8 +1,5 @@
-# # Open the numbers.txt.
+# Open the numbers.txt (Append)
 with open("numbers.txt", "a") as numbers_file:
-# numbers_file = open("numbers.txt", "a")
-
-
 
 # Generate 20 random integers.
     import random
@@ -13,4 +10,8 @@ with open("numbers.txt", "a") as numbers_file:
         print(integer)
         i += 1
 
-numbers_file.close()
+# Open number.txt (read), even.txt (append) and odd.txt (append)
+# Check every line in the number.txt.
+# If even, append the integer to even.txt.
+# Else, if odd, append the integer to odd.txt.
+
