@@ -13,10 +13,8 @@ with open("numbers.txt", "a") as numbers_file:
 def procedure():
 # Open number.txt (read), even.txt (append) and odd.txt (append)
     with open("numbers.txt") as numbers_file, open("even.txt", "a") as even_integer, open("odd.txt", "a") as odd_integer:
+        print(numbers_file)
 # Check every line in the number.txt.
-        for line in numbers_file:
-            integer = int(line)
-            print(integer)
 # If even, append the integer to even.txt.
 # Else, if odd, append the integer to odd.txt.
 
