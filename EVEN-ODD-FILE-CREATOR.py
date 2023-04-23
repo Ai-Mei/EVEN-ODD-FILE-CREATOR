@@ -1,6 +1,6 @@
 # Open the numbers.txt (Append)
 with open("numbers.txt", "a") as numbers_file:
-
+    
 # Generate 20 random integers.
     import random
     i = 0
@@ -16,8 +16,12 @@ def procedure():
 # Check every line in the number.txt.
         for line in numbers_file:
             integer = int(line)
-
-        print(integer)
 # If even, append the integer to even.txt.
+            if integer % 2 == 0:
+                even_integer.write(str(integer) + "\n")
 # Else, if odd, append the integer to odd.txt.
+            else:
+                odd_integer.write(str(integer) + "\n")
 
+# Run the procedure.
+procedure()
